@@ -29,7 +29,7 @@ class EcoleAuthProvider extends AbstractProvider implements ProviderInterface {
      */
     protected function getUserByToken($token)
     {
-        $userURL = 'https://api.intra.42.fr/v2/users/dwdraugr';
+        $userURL = 'https://api.intra.42.fr/v2/me';
         $response = $this->getHttpClient()->get($userURL, [
             'headers' => [
                 'Authorization' => 'Bearer ' . $token,
