@@ -1,0 +1,207 @@
+(N) 2020-06-21T17:35:04 - qBittorrent v4.2.5 started
+(N) 2020-06-21T17:35:04 - Using config directory: /config/qBittorrent/
+(I) 2020-06-21T17:35:04 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-06-21T17:35:04 - Peer ID: -qB4250-
+(N) 2020-06-21T17:35:04 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-06-21T17:35:04 - DHT support [ON]
+(I) 2020-06-21T17:35:04 - Local Peer Discovery support [ON]
+(I) 2020-06-21T17:35:04 - PeX support [ON]
+(I) 2020-06-21T17:35:04 - Anonymous mode [OFF]
+(I) 2020-06-21T17:35:04 - Encryption support [ON]
+(W) 2020-06-21T17:35:04 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2020-06-21T17:35:04 - Using built-in Web UI.
+(W) 2020-06-21T17:35:04 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-06-21T17:35:04 - Web UI: Now listening on IP: *, port: 8001
+(I) 2020-06-21T17:35:04 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-06-21T17:35:04 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-06-21T17:35:04 - Successfully listening on IP: 172.17.0.2, port: TCP/6881
+(I) 2020-06-21T17:35:04 - Successfully listening on IP: 172.17.0.2, port: UDP/6881
+(I) 2020-06-21T17:35:04 - Detected external IP: 176.57.72.117
+(I) 2020-06-21T17:35:05 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Mon Jun 1 02:55:08 2020.
+(I) 2020-06-21T17:35:05 - Successfully updated IP geolocation database.
+(W) 2020-06-21T17:35:10 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T17:37:05 - WebAPI login success. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:39:03 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T17:39:49 - WebAPI login success. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:42:07 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:42:55 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:42:56 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:42:56 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:42:57 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:42:58 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:42:58 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:42:59 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:48:03 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:48:16 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:48:31 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:50:44 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:50:54 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T17:52:32 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:52:50 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:53:15 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:53:31 - WebAPI login failure. Reason: invalid credentials, attempt count: 4, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:53:38 - WebAPI login failure. Reason: invalid credentials, attempt count: 5, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:54:04 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:54:34 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:55:07 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:55:37 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:55:57 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T17:59:54 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:00:09 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:02:58 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:02:58 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T18:03:14 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:03:14 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T18:04:10 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:04:10 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T18:04:49 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:06:38 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:10:25 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:11:32 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:12:45 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(N) 2020-06-21T18:13:09 - qBittorrent v4.2.5 started
+(N) 2020-06-21T18:13:09 - Using config directory: /config/qBittorrent/
+(I) 2020-06-21T18:13:09 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-06-21T18:13:09 - Peer ID: -qB4250-
+(N) 2020-06-21T18:13:09 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-06-21T18:13:09 - DHT support [ON]
+(I) 2020-06-21T18:13:09 - Local Peer Discovery support [ON]
+(I) 2020-06-21T18:13:09 - PeX support [ON]
+(I) 2020-06-21T18:13:09 - Anonymous mode [OFF]
+(I) 2020-06-21T18:13:09 - Encryption support [ON]
+(I) 2020-06-21T18:13:09 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Mon Jun 1 02:55:08 2020.
+(N) 2020-06-21T18:13:09 - Using built-in Web UI.
+(W) 2020-06-21T18:13:09 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-06-21T18:13:09 - Web UI: Now listening on IP: *, port: 8001
+(I) 2020-06-21T18:13:09 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-06-21T18:13:09 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-06-21T18:13:09 - Successfully listening on IP: 172.17.0.2, port: TCP/6881
+(I) 2020-06-21T18:13:09 - Successfully listening on IP: 172.17.0.2, port: UDP/6881
+(I) 2020-06-21T18:13:09 - Detected external IP: 176.57.72.117
+(W) 2020-06-21T18:13:13 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:14:01 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:14:01 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T18:14:17 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:14:17 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T18:14:53 - WebAPI login failure. Reason: invalid credentials, attempt count: 4, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:17:09 - WebAPI login failure. Reason: invalid credentials, attempt count: 5, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:17:31 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:18:19 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.17.0.1, username: 
+(N) 2020-06-21T18:18:28 - qBittorrent v4.2.5 started
+(N) 2020-06-21T18:18:28 - Using config directory: /config/qBittorrent/
+(I) 2020-06-21T18:18:28 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-06-21T18:18:28 - Peer ID: -qB4250-
+(N) 2020-06-21T18:18:28 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-06-21T18:18:28 - DHT support [ON]
+(I) 2020-06-21T18:18:28 - Local Peer Discovery support [ON]
+(I) 2020-06-21T18:18:28 - PeX support [ON]
+(I) 2020-06-21T18:18:28 - Anonymous mode [OFF]
+(I) 2020-06-21T18:18:28 - Encryption support [ON]
+(I) 2020-06-21T18:18:28 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Mon Jun 1 02:55:08 2020.
+(N) 2020-06-21T18:18:28 - Using built-in Web UI.
+(W) 2020-06-21T18:18:28 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-06-21T18:18:28 - Web UI: Now listening on IP: *, port: 8001
+(I) 2020-06-21T18:18:28 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-06-21T18:18:28 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-06-21T18:18:28 - Successfully listening on IP: 172.17.0.2, port: TCP/6881
+(I) 2020-06-21T18:18:28 - Successfully listening on IP: 172.17.0.2, port: UDP/6881
+(I) 2020-06-21T18:18:28 - Detected external IP: 176.57.72.117
+(W) 2020-06-21T18:18:34 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.17.0.1, username: 
+(N) 2020-06-21T18:19:19 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:24:34 - Web UI: Now listening on IP: *, port: 8001
+(N) 2020-06-21T18:25:11 - qBittorrent v4.2.5 started
+(N) 2020-06-21T18:25:11 - Using config directory: /config/qBittorrent/
+(I) 2020-06-21T18:25:11 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-06-21T18:25:11 - Peer ID: -qB4250-
+(N) 2020-06-21T18:25:11 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-06-21T18:25:11 - DHT support [ON]
+(I) 2020-06-21T18:25:11 - Local Peer Discovery support [ON]
+(I) 2020-06-21T18:25:11 - PeX support [ON]
+(I) 2020-06-21T18:25:11 - Anonymous mode [OFF]
+(I) 2020-06-21T18:25:11 - Encryption support [ON]
+(I) 2020-06-21T18:25:11 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Mon Jun 1 02:55:08 2020.
+(N) 2020-06-21T18:25:11 - Using built-in Web UI.
+(W) 2020-06-21T18:25:11 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-06-21T18:25:11 - Web UI: Now listening on IP: *, port: 8001
+(I) 2020-06-21T18:25:11 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-06-21T18:25:11 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-06-21T18:25:11 - Successfully listening on IP: 172.17.0.2, port: TCP/6881
+(I) 2020-06-21T18:25:11 - Successfully listening on IP: 172.17.0.2, port: UDP/6881
+(I) 2020-06-21T18:25:12 - Detected external IP: 176.57.72.117
+(N) 2020-06-21T18:25:18 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:25:54 - Web UI: Now listening on IP: *, port: 8001
+(W) 2020-06-21T18:26:08 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:27:07 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:33:07 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:33:57 - WebAPI login failure. Reason: invalid credentials, attempt count: 4, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:34:57 - WebAPI login failure. Reason: invalid credentials, attempt count: 5, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:35:09 - WebAPI login failure. Reason: invalid credentials, attempt count: 6, IP: ::ffff:172.17.0.1, username: 
+(W) 2020-06-21T18:35:54 - WebAPI login failure. Reason: invalid credentials, attempt count: 7, IP: ::ffff:172.17.0.1, username: 
+(N) 2020-06-21T18:37:11 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:37:51 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:38:08 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:38:22 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:41:56 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:43:26 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:43:30 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:43:34 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:44:00 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:44:27 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:45:04 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:45:17 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:46:39 - WebAPI login success. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T18:46:39 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:47:19 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T18:53:04 - WebAPI login success. IP: ::ffff:172.17.0.1
+(W) 2020-06-21T19:19:58 - Bad Http request, closing socket. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:31:15 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:46:23 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:48:32 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:49:14 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:50:07 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:50:07 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T19:50:09 - Download first and last piece first: Off, torrent: 'bits_and_bytes_1'
+(N) 2020-06-21T19:50:09 - 'bits_and_bytes_1' added to download list.
+(N) 2020-06-21T19:50:47 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:50:47 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T19:50:53 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:51:15 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:51:15 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T19:53:27 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:53:27 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T19:53:32 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T19:53:32 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T19:54:58 - Web UI: Now listening on IP: *, port: 8001
+(N) 2020-06-21T20:06:07 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T20:06:07 - Downloading 'https://archive.org/download/dobba_graphics/dobba_graphics_archive.torrent', please wait...
+(N) 2020-06-21T20:06:09 - Download first and last piece first: Off, torrent: 'dobba_graphics'
+(N) 2020-06-21T20:06:09 - 'dobba_graphics' added to download list.
+(W) 2020-06-21T20:06:09 - URL seed name lookup failed. Torrent: "dobba_graphics". URL: "/2/items/". Error: "0eaef903cb34542923a2bfc665df9fd9339bbc22 url seed (/2/items/) failed: unsupported URL protocol"
+(N) 2020-06-21T21:13:31 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:13:31 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:17:32 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:17:32 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:17:44 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:17:44 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:20:23 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:20:23 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:20:24 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:20:24 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:20:56 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:20:56 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:21:43 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:21:43 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:22:54 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:22:54 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:24:26 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:24:26 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:24:43 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:24:43 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:25:08 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:25:08 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:25:27 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:25:27 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:26:03 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:26:03 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-21T21:26:44 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-21T21:26:44 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
