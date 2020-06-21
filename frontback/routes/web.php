@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,7 +27,7 @@ Route::get('login/github/callback', 'OAuth\GithubController@handleProviderCallba
 Route::get('login/ecole', 'OAuth\EcoleController@redirectToProvider');
 Route::get('login/ecole/callback', 'OAuth\EcoleController@handleProviderCallback');
 
-Route::get('/res', 'HomeController@show');
+Route::get('/search', 'SearchController@searchElems')->middleware('verified');
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 

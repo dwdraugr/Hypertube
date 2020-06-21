@@ -47,7 +47,7 @@
         },
         methods: {
             getVideos() {
-                axios.get('/res', {
+                axios.get('/search', {
                     params: {
                         query: this.search_query
                     }
