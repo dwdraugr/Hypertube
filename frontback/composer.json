@@ -10,12 +10,14 @@
     "require": {
         "php": "^7.4",
         "ext-json": "*",
+        "christeredvartsen/php-bittorrent": "^2.0",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.5",
         "laravel/framework": "^7.0",
         "laravel/socialite": "^4.3",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "symfony/psr-http-message-bridge": "^2.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

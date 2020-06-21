@@ -28,6 +28,8 @@ Route::get('login/ecole', 'OAuth\EcoleController@redirectToProvider');
 Route::get('login/ecole/callback', 'OAuth\EcoleController@handleProviderCallback');
 
 Route::get('/search', 'SearchController@searchElems')->middleware('verified');
+Route::get('/download', 'TorrentController@startDownload')->middleware('verified');
+Route::get('/b', 'TorrentController@parseFile');
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
