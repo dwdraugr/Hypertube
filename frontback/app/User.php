@@ -16,7 +16,7 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'first_name', 'last_name', 'icon'
     ];
 
     /**
@@ -55,5 +55,10 @@ class User extends Authenticatable implements MustVerifyEmail
         $newUser->email_verified_at = $date->format('Y-m-d H:i:s');
         $newUser->save();
         return $newUser;
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
     }
 }
