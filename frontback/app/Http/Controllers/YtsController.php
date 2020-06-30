@@ -45,4 +45,5 @@ class YtsController extends Controller
         Video::saveNewVideo(json_decode($video->getBody())->data->movie);
         return $video;
     }
+
 }

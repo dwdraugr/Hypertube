@@ -26,10 +26,11 @@ Route::get('login/github/callback', 'OAuth\GithubController@handleProviderCallba
 // OAuth from 42 Ecole
 Route::get('login/ecole', 'OAuth\EcoleController@redirectToProvider');
 Route::get('login/ecole/callback', 'OAuth\EcoleController@handleProviderCallback');
-
+//DEPRECATED
 Route::get('/search', 'SearchController@searchElems')->middleware('verified');
 Route::get('/download', 'TorrentController@startDownload')->middleware('verified');
-Route::get('/b', 'TorrentController@parseFile');
+//new progressive system
+Route::get('/api/latest', 'YtsController@index')->middleware('verified');
+Route::get('/api/{id}', 'YtsController@show')->middleware('verified');
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
-
