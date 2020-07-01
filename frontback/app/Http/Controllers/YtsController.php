@@ -29,6 +29,7 @@ class YtsController extends Controller
                 'genre' => $request->get('genre') ?? 'all',
                 'sort_by' => $request->get('sort_by') ?? 'date_added',
                 'order_by' => $request->get('order_by') ?? 'desc',
+                'query_term' => $request->get('query') ?? '0',
             ],
         ]);
     }

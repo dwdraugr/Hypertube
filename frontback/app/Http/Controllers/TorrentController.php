@@ -16,6 +16,7 @@ class TorrentController extends Controller
     private string $torrentUrl = "http://localhost:8001";
     private CookieJar $jar;
     private Client $client;
+    private array $compVideoFormats = ['ogg', 'ogv', 'mp4', 'webm'];
 
     public function __construct()
     {
@@ -52,33 +53,28 @@ class TorrentController extends Controller
             ],
             'cookies' => $this->jar,
         ])->getStatusCode();
-        $result['files'] = $this->parseFile($torrentLink);
-        return $result;
+        return view('video', $this->parseFile($torrentLink));
     }
 
     public function parseFile(string $url)
     {
-        $decoder = new Decoder();
-        $response = Http::get($url);
-        $lol = $response->body();
-        $df = $decoder->decode($lol);
-        return $this->isNormVideo($df['info']['files']);
-    }
-
-    private function isNormVideo(array $files) {
-        $out = [];
-        foreach ($files as $file) {
-            $revert = strrev($file['path'][0]);
-            switch (substr($revert, 0, 4)) {
-                case "vgo.":
-                case "4pm.":
-                    $out[] = $file['path'][0];
-                    $file['path'][0];
-                    break;
-                default:
-                    break;
+        $torrentData = (new Decoder())->decode((Http::get($url))->body())['info'];
+        $folder = $torrentData['name'];
+        $videos = [];
+        $subtitles = [];
+        foreach ($torrentData['files'] as $td) {
+            $file = $td['path'][0];
+            $type = strrev(explode('.', strrev($file))[0]);
+            if (in_array($type, $this->compVideoFormats)) {
+                $videos[$type] = 'files/' . $folder . '/' . $file;
+            } elseif ('$type' === 'srt') {
+                $subtitles[] = 'files/' . $folder . '/' . $file;
             }
         }
-        return $out;
+        return [
+            'videos' => $videos,
+            'subtitles' => $subtitles
+        ];
     }
+
 }

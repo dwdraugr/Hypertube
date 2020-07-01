@@ -205,3 +205,94 @@
 (N) 2020-06-21T21:26:03 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
 (N) 2020-06-21T21:26:44 - WebAPI login success. IP: ::ffff:172.17.0.1
 (N) 2020-06-21T21:26:44 - Downloading 'https://archive.org/download/bits_and_bytes_1/bits_and_bytes_1_archive.torrent', please wait...
+(N) 2020-06-30T21:48:43 - qBittorrent v4.2.5 started
+(N) 2020-06-30T21:48:43 - Using config directory: /config/qBittorrent/
+(I) 2020-06-30T21:48:43 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-06-30T21:48:43 - Peer ID: -qB4250-
+(N) 2020-06-30T21:48:43 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-06-30T21:48:43 - DHT support [ON]
+(I) 2020-06-30T21:48:43 - Local Peer Discovery support [ON]
+(I) 2020-06-30T21:48:43 - PeX support [ON]
+(I) 2020-06-30T21:48:43 - Anonymous mode [OFF]
+(I) 2020-06-30T21:48:43 - Encryption support [ON]
+(I) 2020-06-30T21:48:43 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Mon Jun 1 02:55:08 2020.
+(N) 2020-06-30T21:48:43 - Using built-in Web UI.
+(W) 2020-06-30T21:48:43 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-06-30T21:48:43 - Web UI: Now listening on IP: *, port: 8001
+(I) 2020-06-30T21:48:43 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-06-30T21:48:43 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-06-30T21:48:43 - Successfully listening on IP: 172.17.0.2, port: TCP/6881
+(I) 2020-06-30T21:48:43 - Successfully listening on IP: 172.17.0.2, port: UDP/6881
+(N) 2020-06-30T21:48:43 - 'bits_and_bytes_1' restored.
+(N) 2020-06-30T21:48:43 - 'dobba_graphics' restored.
+(I) 2020-06-30T21:48:43 - Detected external IP: 185.8.126.77
+(C) 2020-06-30T21:48:43 - File sizes mismatch for torrent 'bits_and_bytes_1', pausing it.
+(C) 2020-06-30T21:48:43 - File sizes mismatch for torrent 'dobba_graphics', pausing it.
+(N) 2020-06-30T21:49:46 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-30T21:51:17 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-06-30T21:51:17 - Downloading 'https://archive.org/download/gaza045/gaza045_archive.torrent', please wait...
+(N) 2020-06-30T21:51:19 - Download first and last piece first: Off, torrent: 'gaza045'
+(N) 2020-06-30T21:51:19 - 'gaza045' added to download list.
+(W) 2020-06-30T21:51:19 - URL seed name lookup failed. Torrent: "gaza045". URL: "/17/items/". Error: "e828d3ad57f852b745f711a3f673a1aa373b26ef url seed (/17/items/) failed: unsupported URL protocol"
+(I) 2020-07-01T10:33:06 - Detected external IP: 176.59.46.187
+(I) 2020-07-01T10:44:18 - Detected external IP: 185.8.126.235
+(N) 2020-07-01T14:31:17 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T14:31:17 - Downloading 'https://yts.mx/torrent/download/18F05A35A335909B384D1D40D79EFEC3E71BCEE0', please wait...
+(N) 2020-07-01T14:31:18 - Download first and last piece first: Off, torrent: 'Deadpool 2 (2018) [BluRay] [720p] [YTS.AM]'
+(N) 2020-07-01T14:31:18 - 'Deadpool 2 (2018) [BluRay] [720p] [YTS.AM]' added to download list.
+(N) 2020-07-01T15:12:29 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:12:29 - Downloading 'https://yts.mx/torrent/download/A1D0C3B0FD52A29D2487027E6B50F27EAF4912C5', please wait...
+(N) 2020-07-01T15:12:29 - Download first and last piece first: Off, torrent: 'Deadpool (2016) [YTS.AG]'
+(N) 2020-07-01T15:12:29 - 'Deadpool (2016) [YTS.AG]' added to download list.
+(N) 2020-07-01T15:13:51 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:13:51 - Downloading 'https://yts.mx/torrent/download/8DCEC817168702F38B707519356FE6E5A8367341', please wait...
+(N) 2020-07-01T15:13:51 - Download first and last piece first: Off, torrent: 'Suicide Squad (2016) [1080p] [YTS.AG]'
+(N) 2020-07-01T15:13:51 - 'Suicide Squad (2016) [1080p] [YTS.AG]' added to download list.
+(N) 2020-07-01T15:16:57 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:16:57 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:16:58 - Download first and last piece first: Off, torrent: 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]'
+(N) 2020-07-01T15:16:58 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' added to download list.
+(N) 2020-07-01T15:24:49 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:25:14 - 'bits_and_bytes_1' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:25:14 - 'dobba_graphics' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:25:14 - 'Deadpool 2 (2018) [BluRay] [720p] [YTS.AM]' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:25:14 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:25:14 - 'gaza045' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:25:14 - 'Deadpool (2016) [YTS.AG]' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:25:14 - 'Suicide Squad (2016) [1080p] [YTS.AG]' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:25:35 - Web UI: Now listening on IP: *, port: 8001
+(N) 2020-07-01T15:28:48 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:28:48 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:28:49 - Download first and last piece first: Off, torrent: 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]'
+(N) 2020-07-01T15:28:49 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' added to download list.
+(N) 2020-07-01T15:31:39 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:31:43 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:31:43 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:31:44 - Download first and last piece first: Off, torrent: 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]'
+(N) 2020-07-01T15:31:44 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' added to download list.
+(N) 2020-07-01T15:32:00 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:32:10 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:32:10 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:32:10 - Download first and last piece first: Off, torrent: 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]'
+(N) 2020-07-01T15:32:10 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' added to download list.
+(N) 2020-07-01T15:32:31 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:47:20 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:47:20 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:47:21 - Download first and last piece first: Off, torrent: 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]'
+(N) 2020-07-01T15:47:21 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' added to download list.
+(N) 2020-07-01T15:47:52 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:47:52 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:48:10 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' was removed from the transfer list and hard disk.
+(N) 2020-07-01T15:48:48 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:48:48 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:48:49 - Download first and last piece first: Off, torrent: 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]'
+(N) 2020-07-01T15:48:49 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' added to download list.
+(N) 2020-07-01T15:50:12 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:50:12 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:52:39 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:52:39 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:53:49 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:53:49 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:54:23 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-01T15:54:23 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
+(N) 2020-07-01T15:57:37 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' was removed from the transfer list and hard disk.

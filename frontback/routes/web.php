@@ -28,8 +28,9 @@ Route::get('login/ecole', 'OAuth\EcoleController@redirectToProvider');
 Route::get('login/ecole/callback', 'OAuth\EcoleController@handleProviderCallback');
 //DEPRECATED
 Route::get('/search', 'SearchController@searchElems')->middleware('verified');
-Route::get('/download', 'TorrentController@startDownload')->middleware('verified');
+
 //new progressive system
+Route::get('/download', 'TorrentController@startDownload')->middleware('verified');
 Route::get('/api/latest', 'YtsController@index')->middleware('verified');
 Route::get('/api/{id}', 'YtsController@show')->middleware('verified');
 
