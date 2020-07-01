@@ -34,4 +34,7 @@ Route::get('/download', 'TorrentController@startDownload')->middleware('verified
 Route::get('/api/latest', 'YtsController@index')->middleware('verified');
 Route::get('/api/{id}', 'YtsController@show')->middleware('verified');
 
+Route::get('/api/comment/{video}', 'CommentController@index')->middleware('verified');
+Route::post('/api/comment/', 'CommentController@store')->middleware('verified');
+
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
