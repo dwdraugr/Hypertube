@@ -10,7 +10,7 @@
                         </div>
                     @endif
 
-                    <example-component></example-component>
+                    <example-component />
                 </div>
 </div>
 @endsection
