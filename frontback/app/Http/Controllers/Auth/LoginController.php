@@ -37,10 +37,4 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-
-    public static function manualRegistration($name, $email)
-    {
-        $newUser = new User;
-
-    }
 }

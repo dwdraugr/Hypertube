@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8">
@@ -74,6 +75,17 @@
                   <div class="modal-body">
                     <video-player :video="video"/>
                   </div>
+=======
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Example Component</div>
+
+                    <div class="card-body">
+                        I'm an example component.
+                    </div>
+>>>>>>> 842696a9a68c72e486e8b3dc103cb4c1cb3dfc0b
                 </div>
               </div>
             </div>
@@ -84,6 +96,7 @@
   </div>
 </template>
 
+<<<<<<< HEAD
 <style>
 .card {
   margin-bottom: 1em;
@@ -129,6 +142,13 @@ export default {
             return video;
           });
         });
+=======
+<script>
+    export default {
+        mounted() {
+            console.log('Component mounted.')
+        }
+>>>>>>> 842696a9a68c72e486e8b3dc103cb4c1cb3dfc0b
     }
   }
 };
