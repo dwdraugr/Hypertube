@@ -1,5 +1,9 @@
 <template>
-  <div>{{ template }}</div>
+  <div>
+    <b-overlay :show="queryInProgress" spinner-type="grow">
+      <div v-html="template" />
+    </b-overlay>
+  </div>
 </template>
 
 <script>
@@ -12,7 +16,12 @@ export default {
       }
     }
   },
-  async fetch() {
+  data() {
+    return {
+      queryInProgress: true
+    };
+  },
+  async mounted() {
     await axios
       .get("/download", {
         params: {
@@ -20,13 +29,14 @@ export default {
         }
       })
       .then(response => {
-        // тут же в ответ должен прилететь темплейт плеера?
-        // если так, то я тупа вставлю {{ template }} наверх в див
-        this.template = response;
+        this.template = response.data;
       })
       .catch(() => {
-        this.template = "Кина не будет. Плеер принял ислам"
+        this.template = "Кина не будет. Плеер принял ислам";
       })
+      .finally(() => {
+        this.queryInProgress = false;
+      });
   },
   data() {
     return {

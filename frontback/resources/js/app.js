@@ -32,3 +32,7 @@ Vue.component('comment-list', require('./components/CommentList.vue').default);
 const app = new Vue({
     el: '#app',
 });
+
+import BootstrapVue from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)

@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8">
@@ -41,8 +40,7 @@
             <button
               type="button"
               class="btn btn-outline-secondary"
-              data-toggle="modal"
-              data-target="#exampleModalScrollable"
+              v-b-modal="`modal-video-${video.id}`"
             >
               <svg
                 width="1em"
@@ -59,36 +57,15 @@
               </svg>
             </button>
 
-            <div
-              class="modal fade"
-              id="exampleModalScrollable"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalScrollableTitle"
-              aria-hidden="true"
+            <b-modal
+              :id="`modal-video-${video.id}`"
+              centered
+              size="lg"
+              hide-header
+              hide-footer
             >
-              <div
-                class="modal-dialog modal-dialog-centered modal-xl"
-                role="document"
-              >
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <video-player :video="video"/>
-                  </div>
-=======
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
->>>>>>> 842696a9a68c72e486e8b3dc103cb4c1cb3dfc0b
-                </div>
-              </div>
-            </div>
+              <video-player :video="video" />
+            </b-modal>
           </div>
         </div>
       </div>
@@ -96,7 +73,6 @@
   </div>
 </template>
 
-<<<<<<< HEAD
 <style>
 .card {
   margin-bottom: 1em;
@@ -126,14 +102,12 @@ export default {
       this.searchPressed = true;
 
       axios
-        .get("/search", {
+        .get(`/search`, {
           params: {
             query: this.search_query
           }
         })
         .then(response => {
-          this.searchPressed = false;
-
           this.videos = response.data.map(video => {
             video.id = Math.floor(Math.random() * Math.floor(4294967296));
             if (video.description && video.description.length > 140) {
@@ -141,14 +115,10 @@ export default {
             }
             return video;
           });
+        })
+        .finally(() => {
+          this.searchPressed = false;
         });
-=======
-<script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
->>>>>>> 842696a9a68c72e486e8b3dc103cb4c1cb3dfc0b
     }
   }
 };
