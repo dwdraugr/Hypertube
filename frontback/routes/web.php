@@ -1,5 +1,6 @@
 <?php
 
+//use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,10 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
+Route::resource('users', UserController::class)->only([
+    'show', 'edit', 'update',
+])->middleware('verified');
+
 // OAuth from Github
 Route::get('login/github', 'OAuth\GithubController@redirectToProvider');
 Route::get('login/github/callback', 'OAuth\GithubController@handleProviderCallback');
@@ -38,3 +43,7 @@ Route::get('/api/comment/{video}', 'CommentController@index')->middleware('verif
 Route::post('/api/comment/', 'CommentController@store')->middleware('verified');
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
