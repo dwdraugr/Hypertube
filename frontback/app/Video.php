@@ -14,6 +14,7 @@ class Video extends Model
         if (Video::where('yts_id', $video->id)->first() !== null)
             return;
         $element = new Video;
+        $element->id = $video->id;
         $element->yts_id = $video->id;
         $element->imdb_code = $video->imdb_code;
         $element->title = $video->title;
