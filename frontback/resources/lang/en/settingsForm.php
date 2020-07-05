@@ -13,20 +13,19 @@ return [
     |
     */
 
-    'welcome' => 'Just get new emotion',
+    'Header' => 'Update Info',
+    'General' => 'General Info',
+    'Username' => 'Username',
+    'FirstName' => 'First Name',
+    'LastName' => 'LastName',
+    'Password' => 'Password',
+    'NewPassword' => 'New Password',
+    'RepeatPassword' => 'Repeat Password',
+    'Icon' => 'User Icon',
+    'UpdateIcon' => 'Update Icon',
+    'Lang' => 'Language',
+    'SelectLang' => 'Select Language',
+    'LangPlaceHolder' => 'Select...',
 
-    'Logout' => 'Logout',
-    'Settings' => 'Settings',
-    'Register' => 'Register',
-    'Login' => 'Login',
-
-    'Header' => 'User Info',
-    'Nickname' => 'Nickname',
-    'FullName' => 'Full Name',
-    'Email' => 'Email',
-    'EditButton' => 'Edit Profile',
-    'UpdateMessage' => 'Settings update successful!',
-
-
-
+    'UpdateButton' => 'Update',
 ];

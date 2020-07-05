@@ -85,7 +85,7 @@
                 <div class="title m-b-md rainbow-text">
                     Hypertube
                 </div>
-                <div class="rainbow-text">Just get new emotion</div>
+                <div class="rainbow-text">{{ __('settings.welcome') }}</div>
             </div>
         </div>
     </body>

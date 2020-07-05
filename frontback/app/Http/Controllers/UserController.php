@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Foundation\Auth\User;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -38,6 +39,9 @@ class UserController extends Controller
                 break;
             case 'icon':
                 $this->updateIcon($request);
+                break;
+            case 'lang':
+                $this->updateLang($request);
                 break;
             default:
                 return abort(400, 'Incorrect params.');
@@ -81,5 +85,16 @@ class UserController extends Controller
         $user = Auth::user();
         $user->icon = 'data:image/' . $request->file('icon')->extension() . ';base64,' . base64_encode(file_get_contents($request->file('icon')->getPathname()));
         $user->save();
+    }
+
+    private function updateLang(Request $request)
+    {
+        $lang = $request->validate([
+            'lang' => 'required'
+        ])['lang'];
+        $user = Auth::user();
+        $user->locale = $lang;
+        $user->save();
+        App::setLocale($lang);
     }
 }
