@@ -25,8 +25,7 @@ class OAuthLoginController extends Controller
     {
         $user = Socialite::driver($this->sitename)->user();
         $existUser = User::where([
-            ['name', '=', $user->getNickname()],
-            ['email', '=', $user->getEmail()]
+            ['email', '=', $user->getEmail()],
         ])->first();
         if (!$existUser) {
             $existUser = User::manualRegistration($user->getNickname(), $user->getEmail());
