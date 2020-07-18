@@ -32,18 +32,6 @@ class YtsController extends Controller
                 'query_term' => $request->get('query') ?? '0',
             ],
         ])->getBody()));
-//        return response($this->httpClient->get('https://yts.mx/api/v2/list_movies.json', [
-//            'query' => [
-//                'limit' => '50',
-//                'page' => $request->get('page') ?? '1',
-//                'quality' => $request->get('quality') ?? 'all',
-//                'minimum_rating' => $request->get('minimum_rating') ?? '0',
-//                'genre' => $request->get('genre') ?? 'all',
-//                'sort_by' => $request->get('sort_by') ?? 'date_added',
-//                'order_by' => $request->get('order_by') ?? 'desc',
-//                'query_term' => $request->get('query') ?? '0',
-//            ],
-//        ])->getBody())->;
     }
 
     public function show(int $id)
