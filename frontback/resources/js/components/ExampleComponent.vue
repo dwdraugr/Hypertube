@@ -29,13 +29,12 @@
             </button>
           </div>
         </div>
-        <div v-for="video in videos" :key="video.link" class="card">
+        <div v-for="video in videos" :key="video.id" class="card">
           <div class="card-header">{{ video.title }}</div>
           <div class="card-body">
-            <p><b>Description:</b> {{ video.description }}</p>
-            <p><b>Date:</b> {{ video.date }}</p>
+            <p><b>Description:</b> {{ video.description_full }}</p>
+            <p><b>Date:</b> {{ video.year }}</p>
             <hr />
-            <p><b>Link:</b> {{ video.link }}</p>
 
             <button
               type="button"
@@ -102,20 +101,22 @@ export default {
       this.searchPressed = true;
 
       axios
-        .get(`/search`, {
+        .get(`/api/latest`, {
           params: {
             query: this.search_query
           }
         })
         .then(response => {
-          this.videos = response.data.map(video => {
-            video.id = Math.floor(Math.random() * Math.floor(4294967296));
-            if (video.description && video.description.length > 140) {
-              video.description = video.description.substring(0, 140) + "...";
-            }
-            return video;
-          });
+          // this.videos = response.data.data.movies.map(video => {
+          //   video.id = Math.floor(Math.random() * Math.floor(4294967296))
+          //   if (video.description_full && video.description_full.length > 140) {
+          //     video.description_full = video.description_full.substring(0, 140) + "...";
+          //   }
+          //   return video;
+          // })
+            this.videos = response.data.data.movies
         })
+          .catch(() => {})
         .finally(() => {
           this.searchPressed = false;
         });

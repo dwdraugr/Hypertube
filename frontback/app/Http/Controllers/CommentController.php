@@ -8,8 +8,13 @@ use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
-    public function index(Video $video)
+    public function index(int $video)
     {
+        $video = Video::where('yts_id', $video)->get()->all();
+        if (!$video) {
+            return response(['biba' => 'biba'], 400);
+        }
+        ddd($video);
         $comments = $video->comments;
         foreach ($comments as &$comment) {
             $user = \App\User::find($comment->user_id);

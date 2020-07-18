@@ -16,16 +16,16 @@ export default {
       }
     }
   },
-  data() {
+  data () {
     return {
       queryInProgress: true
     };
   },
-  async mounted() {
+  async mounted () {
     await axios
       .get("/download", {
         params: {
-          torrentLink: this.video.link
+          torrentLink: this.video.torrents[0].url
         }
       })
       .then(response => {
@@ -37,11 +37,6 @@ export default {
       .finally(() => {
         this.queryInProgress = false;
       });
-  },
-  data() {
-    return {
-      template: ""
-    };
   }
 };
 </script>

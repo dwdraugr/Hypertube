@@ -2074,7 +2074,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log("Component mounted.");
@@ -2097,21 +2096,20 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.searchPressed = true;
-      axios.get("/search", {
+      axios.get("/api/latest", {
         params: {
           query: this.search_query
         }
       }).then(function (response) {
-        _this.videos = response.data.map(function (video) {
-          video.id = Math.floor(Math.random() * Math.floor(4294967296));
-
-          if (video.description && video.description.length > 140) {
-            video.description = video.description.substring(0, 140) + "...";
-          }
-
-          return video;
-        });
-      })["finally"](function () {
+        // this.videos = response.data.data.movies.map(video => {
+        //   video.id = Math.floor(Math.random() * Math.floor(4294967296))
+        //   if (video.description_full && video.description_full.length > 140) {
+        //     video.description_full = video.description_full.substring(0, 140) + "...";
+        //   }
+        //   return video;
+        // })
+        _this.videos = response.data.data.movies;
+      })["catch"](function () {})["finally"](function () {
         _this.searchPressed = false;
       });
     }
@@ -2133,8 +2131,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
@@ -2147,7 +2143,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = (_defineProperty({
+/* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     video: {
       type: Object,
@@ -2172,7 +2168,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               _context.next = 2;
               return axios.get("/download", {
                 params: {
-                  torrentLink: _this.video.link
+                  torrentLink: _this.video.torrents[0].url
                 }
               }).then(function (response) {
                 _this.template = response.data;
@@ -2190,11 +2186,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }, _callee);
     }))();
   }
-}, "data", function data() {
-  return {
-    template: ""
-  };
-}));
+});
 
 /***/ }),
 
@@ -81948,7 +81940,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _vm._l(_vm.videos, function(video) {
-            return _c("div", { key: video.link, staticClass: "card" }, [
+            return _c("div", { key: video.id, staticClass: "card" }, [
               _c("div", { staticClass: "card-header" }, [
                 _vm._v(_vm._s(video.title))
               ]),
@@ -81959,20 +81951,15 @@ var render = function() {
                 [
                   _c("p", [
                     _c("b", [_vm._v("Description:")]),
-                    _vm._v(" " + _vm._s(video.description))
+                    _vm._v(" " + _vm._s(video.description_full))
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _c("b", [_vm._v("Date:")]),
-                    _vm._v(" " + _vm._s(video.date))
+                    _vm._v(" " + _vm._s(video.year))
                   ]),
                   _vm._v(" "),
                   _c("hr"),
-                  _vm._v(" "),
-                  _c("p", [
-                    _c("b", [_vm._v("Link:")]),
-                    _vm._v(" " + _vm._s(video.link))
-                  ]),
                   _vm._v(" "),
                   _c(
                     "button",
@@ -94570,8 +94557,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /mnt/c/Users/somerussianlad/Desktop/Hypertube/frontback/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /mnt/c/Users/somerussianlad/Desktop/Hypertube/frontback/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/dwdraugr/Hypertube/frontback/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/dwdraugr/Hypertube/frontback/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
