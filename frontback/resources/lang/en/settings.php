@@ -14,6 +14,7 @@ return [
     */
 
     'welcome' => 'Just get new emotion',
+    'home' => 'Home',
 
     'Logout' => 'Logout',
     'Settings' => 'Settings',

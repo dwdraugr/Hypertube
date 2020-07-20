@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/locale', function () {
+    return require "../resources/lang/". App::getLocale() ."/front.php";
+});
+
 Auth::routes(['verify' => true]);
 
 Route::resource('users', UserController::class)->only([
@@ -43,7 +47,3 @@ Route::get('/api/comment/{video}', 'CommentController@index')->middleware('verif
 Route::post('/api/comment/', 'CommentController@store')->middleware('verified');
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
