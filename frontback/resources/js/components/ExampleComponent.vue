@@ -32,10 +32,22 @@
         <div v-for="video in videos" :key="video.id" class="card">
           <div class="card-header">{{ video.title }}</div>
           <div class="card-body">
-            <p><b>Description:</b> {{ video.description_full }}</p>
-            <p><b>Date:</b> {{ video.year }}</p>
+            <b-img
+              :src="video.medium_cover_image"
+              class="float-left mt-2 mr-2"
+            />
+            <div><b>Description:</b> {{ video.description_full }}</div>
+            <div><b>Date:</b> {{ video.year }}</div>
+            <div><b>Rating:</b> {{ video.rating }}</div>
+            <b-button
+              class="mt-2 p-2"
+              variant="outline-secondary"
+              :href="`https://www.imdb.com/title/${video.imdb_code}`"
+              target="_blank"
+            >
+              IMDB
+            </b-button>
             <hr />
-
             <button
               type="button"
               class="btn btn-outline-secondary"
@@ -55,11 +67,11 @@
                 />
               </svg>
             </button>
-
             <b-modal
               :id="`modal-video-${video.id}`"
               centered
               size="lg"
+              style="min-height:500px;"
               hide-header
               hide-footer
             >
@@ -80,47 +92,43 @@
 
 <script>
 export default {
-  mounted() {
-    console.log("Component mounted.");
-  },
-  data: function() {
+  data: function () {
     return {
-      message: "Привет биба, вот результат:",
+      message: 'Привет биба, вот результат:',
       videos: [],
-      search_query: "",
+      search_query: '',
       searchPressed: false
-    };
-  },
-  computed: {
-    bibaData: function() {
-      return navigator.userAgent;
     }
   },
+  async mounted () {
+    await axios
+      .get('/api/latest')
+      .then(response => {
+        this.videos = response.data.data.movies
+      })
+      .catch(() => {})
+      .finally(() => {
+        this.searchPressed = false
+      })
+  },
   methods: {
-    getVideos() {
-      this.searchPressed = true;
+    getVideos () {
+      this.searchPressed = true
 
       axios
-        .get(`/api/latest`, {
+        .get('/api/latest', {
           params: {
             query: this.search_query
           }
         })
         .then(response => {
-          // this.videos = response.data.data.movies.map(video => {
-          //   video.id = Math.floor(Math.random() * Math.floor(4294967296))
-          //   if (video.description_full && video.description_full.length > 140) {
-          //     video.description_full = video.description_full.substring(0, 140) + "...";
-          //   }
-          //   return video;
-          // })
-            this.videos = response.data.data.movies
+          this.videos = response.data.data.movies
         })
-          .catch(() => {})
+        .catch(() => {})
         .finally(() => {
-          this.searchPressed = false;
-        });
+          this.searchPressed = false
+        })
     }
   }
-};
+}
 </script>
