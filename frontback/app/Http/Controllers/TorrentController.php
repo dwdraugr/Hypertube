@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Http;
 
 class TorrentController extends Controller
 {
-    private string $torrentUrl = "http://qbit:8888";
+    private string $torrentUrl;
+    private string $torrentUser;
+    private string $torrentPassword;
     private CookieJar $jar;
     private Client $client;
     private array $compVideoFormats = ['ogg', 'ogv', 'mp4', 'webm'];
@@ -21,6 +23,9 @@ class TorrentController extends Controller
     public function __construct()
     {
         $this->jar = new CookieJar();
+        $this->torrentUrl = 'http://' . config('services.qbittorrent.host') . ':' .config('services.qbittorrent.port');
+        $this->torrentUser = config('services.qbittorrent.user');
+        $this->torrentPassword = config('services.qbittorrent.password');
     }
 
     private function auth()
@@ -28,8 +33,8 @@ class TorrentController extends Controller
         $this->client = new Client(['base_uri' => $this->torrentUrl]);
         $this->client->get('/api/v2/auth/login', [
             'query' => [
-                'username' => 'admin',
-                'password' => 'adminadmin',
+                'username' => $this->torrentUser,
+                'password' => $this->torrentPassword,
             ],
             'cookies' => $this->jar
         ]);

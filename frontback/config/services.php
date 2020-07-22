@@ -41,4 +41,11 @@ return [
         'client_secret' => env('ECOLE_CLIENT_SECRET'),
         'redirect' => 'http://localhost:8000/login/ecole/callback',
     ],
+
+    'qbittorrent' => [
+        'host' => env('QBIT_HOST'),
+        'port' => env('QBIT_PORT'),
+        'user' => env('QBIT_USER'),
+        'password' => ('QBIT_PASSWORD'),
+    ]
 ];

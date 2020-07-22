@@ -3,20 +3,19 @@ version: "3"
 services:
 
   app:
-    image: webdevops/php-apache-dev:7.4
-    # working_dir: '/app'
-    # entrypoint: bash -c "sleep 30s && php artisan migrate"
+    build:
+      context: .
+      dockerfile: Dockerfiles/app/Dockerfile
     depends_on:
       - composer
       - db
-    volumes:
-      - $PWD:/app
     ports:
-      - 8000:8000
+      - 8000:80
     environment:
-      - WEB_DOCUMENT_ROOT=app/biba
+      - WEB_DOCUMENT_ROOT=/app/public
 
   db:
+    container_name: db
     image: mariadb:latest
     ports:
       - 3306:3306
@@ -25,8 +24,11 @@ services:
       - MYSQL_USER=laravel
       - MYSQL_PASSWORD=qwerty
       - MYSQL_ROOT_PASSWORD=qwerty
+    volumes:
+    - dbvolume:/var/lib/mysql
 
   qbit:
+    container_name: qbit
     image: linuxserver/qbittorrent
     restart: unless-stopped
     volumes:
@@ -42,9 +44,21 @@ services:
       - UMASK_SET=022
       - WEBUI_PORT=8888
 
+  migrator:
+    build:
+      context: .
+      dockerfile: Dockerfiles/migrator/Dockerfile
+    restart: 'no'
+    depends_on:
+      - db
+      - composer
+
   composer:
     restart: 'no'
     image: composer
     command: install
     volumes:
     - $PWD:/app
+
+volumes:
+  dbvolume:
