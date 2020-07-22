@@ -21,7 +21,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('video-player', require('./components/VideoPlayer.vue').default);
-Vue.component('comment-list', require('./components/CommentList.vue').default);
+Vue.component('comments', require('./components/Comments.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

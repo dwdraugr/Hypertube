@@ -1,7 +1,14 @@
 <template>
   <div>
     <b-overlay :show="queryInProgress" spinner-type="grow">
-      <div v-html="template" />
+      <div
+        v-html="template"
+        class="text-center"
+      />
+      <comments
+        v-if="!queryInProgress"
+        :video="video"
+      />
     </b-overlay>
   </div>
 </template>
@@ -12,31 +19,31 @@ export default {
     video: {
       type: Object,
       default: () => {
-        return {};
+        return {}
       }
     }
   },
   data () {
     return {
       queryInProgress: true
-    };
+    }
   },
   async mounted () {
     await axios
-      .get("/download", {
+      .get('/download', {
         params: {
           torrentLink: this.video.torrents[0].url
         }
       })
       .then(response => {
-        this.template = response.data;
+        this.template = response.data
       })
       .catch(() => {
-        this.template = "Кина не будет. Плеер принял ислам";
+        this.template = 'Кина не будет. Плеер принял ислам'
       })
       .finally(() => {
-        this.queryInProgress = false;
-      });
+        this.queryInProgress = false
+      })
   }
-};
+}
 </script>
