@@ -296,3 +296,109 @@
 (N) 2020-07-01T15:54:23 - WebAPI login success. IP: ::ffff:172.17.0.1
 (N) 2020-07-01T15:54:23 - Downloading 'https://yts.mx/torrent/download/446242D4A155FA5C37ACBEB5F6ECE08134F97984', please wait...
 (N) 2020-07-01T15:57:37 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' was removed from the transfer list and hard disk.
+(N) 2020-07-12T18:11:21 - qBittorrent v4.2.5 started
+(N) 2020-07-12T18:11:21 - Using config directory: /config/qBittorrent/
+(I) 2020-07-12T18:11:21 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-07-12T18:11:21 - Peer ID: -qB4250-
+(N) 2020-07-12T18:11:21 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-07-12T18:11:21 - DHT support [ON]
+(I) 2020-07-12T18:11:21 - Local Peer Discovery support [ON]
+(I) 2020-07-12T18:11:21 - PeX support [ON]
+(I) 2020-07-12T18:11:21 - Anonymous mode [OFF]
+(I) 2020-07-12T18:11:21 - Encryption support [ON]
+(I) 2020-07-12T18:11:21 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Mon Jun 1 02:55:08 2020.
+(N) 2020-07-12T18:11:21 - Using built-in Web UI.
+(W) 2020-07-12T18:11:21 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-07-12T18:11:21 - Web UI: Now listening on IP: *, port: 8001
+(I) 2020-07-12T18:11:21 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-07-12T18:11:21 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-07-12T18:11:21 - Successfully listening on IP: 172.17.0.2, port: TCP/6881
+(I) 2020-07-12T18:11:21 - Successfully listening on IP: 172.17.0.2, port: UDP/6881
+(N) 2020-07-12T18:11:21 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' restored.
+(N) 2020-07-12T18:11:21 - 'Deadpool 2 (2018) [BluRay] [720p] [YTS.AM]' restored.
+(N) 2020-07-12T18:11:21 - 'bits_and_bytes_1' restored.
+(N) 2020-07-12T18:11:21 - 'dobba_graphics' restored.
+(I) 2020-07-12T18:11:21 - Detected external IP: 185.8.126.235
+(I) 2020-07-12T18:11:21 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Jul 1 02:57:33 2020.
+(I) 2020-07-12T18:11:21 - Successfully updated IP geolocation database.
+(C) 2020-07-12T18:11:21 - File sizes mismatch for torrent 'bits_and_bytes_1', pausing it.
+(C) 2020-07-12T18:11:21 - File sizes mismatch for torrent 'dobba_graphics', pausing it.
+(I) 2020-07-13T08:42:07 - UPnP / NAT-PMP support [OFF]
+(N) 2020-07-20T21:17:49 - qBittorrent v4.2.5 started
+(N) 2020-07-20T21:17:49 - Using config directory: /config/qBittorrent/
+(I) 2020-07-20T21:17:49 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-07-20T21:17:49 - Peer ID: -qB4250-
+(N) 2020-07-20T21:17:49 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-07-20T21:17:49 - DHT support [ON]
+(I) 2020-07-20T21:17:49 - Local Peer Discovery support [ON]
+(I) 2020-07-20T21:17:49 - PeX support [ON]
+(I) 2020-07-20T21:17:49 - Anonymous mode [OFF]
+(I) 2020-07-20T21:17:49 - Encryption support [ON]
+(I) 2020-07-20T21:17:49 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Jul 1 02:57:33 2020.
+(N) 2020-07-20T21:17:49 - Using built-in Web UI.
+(W) 2020-07-20T21:17:49 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-07-20T21:17:49 - Web UI: Now listening on IP: *, port: 8001
+(I) 2020-07-20T21:17:49 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-07-20T21:17:49 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-07-20T21:17:49 - Successfully listening on IP: 172.17.0.2, port: TCP/6881
+(I) 2020-07-20T21:17:49 - Successfully listening on IP: 172.17.0.2, port: UDP/6881
+(N) 2020-07-20T21:17:49 - 'bits_and_bytes_1' restored.
+(N) 2020-07-20T21:17:49 - 'dobba_graphics' restored.
+(N) 2020-07-20T21:17:49 - 'Deadpool 2 (2018) [BluRay] [720p] [YTS.AM]' restored.
+(N) 2020-07-20T21:17:49 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' restored.
+(I) 2020-07-20T21:17:49 - Detected external IP: 185.8.126.235
+(C) 2020-07-20T21:17:50 - File sizes mismatch for torrent 'bits_and_bytes_1', pausing it.
+(C) 2020-07-20T21:17:50 - File sizes mismatch for torrent 'dobba_graphics', pausing it.
+(N) 2020-07-20T21:22:04 - WebAPI login success. IP: ::ffff:172.17.0.1
+(N) 2020-07-20T21:22:04 - Downloading 'https://yts.mx/torrent/download/18F05A35A335909B384D1D40D79EFEC3E71BCEE0', please wait...
+(N) 2020-07-22T08:02:55 - qBittorrent v4.2.5 started
+(N) 2020-07-22T08:02:55 - Using config directory: /config/qBittorrent/
+(I) 2020-07-22T08:02:55 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-07-22T08:02:55 - Peer ID: -qB4250-
+(N) 2020-07-22T08:02:55 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-07-22T08:02:55 - DHT support [ON]
+(I) 2020-07-22T08:02:55 - Local Peer Discovery support [ON]
+(I) 2020-07-22T08:02:55 - PeX support [ON]
+(I) 2020-07-22T08:02:55 - Anonymous mode [OFF]
+(I) 2020-07-22T08:02:55 - Encryption support [ON]
+(I) 2020-07-22T08:02:55 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Jul 1 02:57:33 2020.
+(N) 2020-07-22T08:02:55 - Using built-in Web UI.
+(W) 2020-07-22T08:02:55 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-07-22T08:02:55 - Web UI: Now listening on IP: *, port: 8001
+(I) 2020-07-22T08:02:55 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-07-22T08:02:55 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-07-22T08:02:55 - Successfully listening on IP: 172.17.0.2, port: TCP/6881
+(I) 2020-07-22T08:02:55 - Successfully listening on IP: 172.17.0.2, port: UDP/6881
+(N) 2020-07-22T08:02:55 - 'bits_and_bytes_1' restored.
+(N) 2020-07-22T08:02:55 - 'dobba_graphics' restored.
+(N) 2020-07-22T08:02:55 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' restored.
+(N) 2020-07-22T08:02:55 - 'Deadpool 2 (2018) [BluRay] [720p] [YTS.AM]' restored.
+(I) 2020-07-22T08:02:55 - Detected external IP: 185.8.126.235
+(C) 2020-07-22T08:02:55 - File sizes mismatch for torrent 'bits_and_bytes_1', pausing it.
+(C) 2020-07-22T08:02:55 - File sizes mismatch for torrent 'dobba_graphics', pausing it.
+(I) 2020-07-22T08:10:39 - UPnP / NAT-PMP support [OFF]
+(N) 2020-07-22T08:10:49 - qBittorrent v4.2.5 started
+(N) 2020-07-22T08:10:49 - Using config directory: /config/qBittorrent/
+(I) 2020-07-22T08:10:49 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-07-22T08:10:49 - Peer ID: -qB4250-
+(N) 2020-07-22T08:10:49 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-07-22T08:10:49 - DHT support [ON]
+(I) 2020-07-22T08:10:49 - Local Peer Discovery support [ON]
+(I) 2020-07-22T08:10:49 - PeX support [ON]
+(I) 2020-07-22T08:10:49 - Anonymous mode [OFF]
+(I) 2020-07-22T08:10:49 - Encryption support [ON]
+(I) 2020-07-22T08:10:49 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Jul 1 02:57:33 2020.
+(N) 2020-07-22T08:10:49 - Using built-in Web UI.
+(W) 2020-07-22T08:10:49 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-07-22T08:10:49 - Web UI: Now listening on IP: *, port: 8001
+(I) 2020-07-22T08:10:49 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-07-22T08:10:49 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-07-22T08:10:49 - Successfully listening on IP: 172.17.0.2, port: TCP/6881
+(I) 2020-07-22T08:10:49 - Successfully listening on IP: 172.17.0.2, port: UDP/6881
+(N) 2020-07-22T08:10:49 - 'bits_and_bytes_1' restored.
+(N) 2020-07-22T08:10:49 - 'dobba_graphics' restored.
+(N) 2020-07-22T08:10:49 - 'Deadpool 2 (2018) [BluRay] [720p] [YTS.AM]' restored.
+(N) 2020-07-22T08:10:49 - 'My Neighbor Totoro (1988) [1080p] [BluRay] [YTS.MX]' restored.
+(I) 2020-07-22T08:10:49 - Detected external IP: 185.8.126.235
+(C) 2020-07-22T08:10:49 - File sizes mismatch for torrent 'bits_and_bytes_1', pausing it.
+(C) 2020-07-22T08:10:49 - File sizes mismatch for torrent 'dobba_graphics', pausing it.

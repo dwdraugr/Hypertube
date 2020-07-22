@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Http;
 
 class TorrentController extends Controller
 {
-    private string $torrentUrl = "http://172.17.0.2:8001";
+    private string $torrentUrl = "http://qbit:8888";
     private CookieJar $jar;
     private Client $client;
     private array $compVideoFormats = ['ogg', 'ogv', 'mp4', 'webm'];
