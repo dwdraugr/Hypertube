@@ -3,7 +3,9 @@ version: "3"
 services:
 
   app:
-    build: .
+    image: webdevops/php-apache-dev:7.4
+    # working_dir: '/app'
+    # entrypoint: bash -c "sleep 30s && php artisan migrate"
     depends_on:
       - composer
       - db
@@ -12,7 +14,7 @@ services:
     ports:
       - 8000:8000
     environment:
-      - WEB_DOCUMENT_ROOT=app/public
+      - WEB_DOCUMENT_ROOT=app/biba
 
   db:
     image: mariadb:latest
@@ -23,6 +25,7 @@ services:
       - MYSQL_USER=laravel
       - MYSQL_PASSWORD=qwerty
       - MYSQL_ROOT_PASSWORD=qwerty
+
   qbit:
     image: linuxserver/qbittorrent
     restart: unless-stopped
@@ -38,6 +41,7 @@ services:
       - TZ=Europe/Moscow
       - UMASK_SET=022
       - WEBUI_PORT=8888
+
   composer:
     restart: 'no'
     image: composer
