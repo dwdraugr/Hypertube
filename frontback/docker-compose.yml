@@ -13,6 +13,8 @@ services:
       - 8000:80
     environment:
       - WEB_DOCUMENT_ROOT=/app/public
+    volumes:
+      - videovolume:/app/public/files
 
   db:
     container_name: db
@@ -32,14 +34,14 @@ services:
     image: linuxserver/qbittorrent
     restart: unless-stopped
     volumes:
-    - $PWD/public/files:/downloads
+    - videovolume:/downloads
     - $PWD/../qbitconfig:/config
     ports:
     - 6881:6881/udp
     - 8888:8888
     environment:
-      - PUID=1000
-      - PUIG=1000
+      - PUID=1
+      - PUIG=1
       - TZ=Europe/Moscow
       - UMASK_SET=022
       - WEBUI_PORT=8888
@@ -62,3 +64,4 @@ services:
 
 volumes:
   dbvolume:
+  videovolume:
