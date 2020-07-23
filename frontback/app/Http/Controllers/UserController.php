@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function displayUserData()
+    {
+        return Auth::user();
+    }
+
     public function show(User $user)
     {
         return view('user', [

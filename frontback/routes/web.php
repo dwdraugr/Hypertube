@@ -47,3 +47,4 @@ Route::get('/api/comment/{video}', 'CommentController@index')->middleware('verif
 Route::post('/api/comment/', 'CommentController@store')->middleware('verified');
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+Route::get('/me', 'UserController@displayUserData');
