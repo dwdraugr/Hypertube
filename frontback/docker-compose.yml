@@ -9,6 +9,7 @@ services:
     depends_on:
       - composer
       - db
+      - migrator
     ports:
       - 8000:80
     environment:
