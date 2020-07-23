@@ -7,6 +7,7 @@
       />
       <comments
         v-if="!queryInProgress"
+        :user="user"
         :video="video"
       />
     </b-overlay>
@@ -16,6 +17,15 @@
 <script>
 export default {
   props: {
+    user: {
+      type: Object,
+      default: () => {
+        return {
+          name: 'Anonymous',
+          locale: 'en'
+        }
+      }
+    },
     video: {
       type: Object,
       default: () => {
@@ -25,7 +35,13 @@ export default {
   },
   data () {
     return {
+      template: '',
       queryInProgress: true
+    }
+  },
+  computed: {
+    errorMessage () {
+      return this.user.locale === 'en' ? 'Oh, shit, I\'m sorry' : 'Кина не будет. Плеер принял ислам'
     }
   },
   async mounted () {
@@ -39,7 +55,7 @@ export default {
         this.template = response.data
       })
       .catch(() => {
-        this.template = 'Кина не будет. Плеер принял ислам'
+        this.template = this.errorMessage
       })
       .finally(() => {
         this.queryInProgress = false

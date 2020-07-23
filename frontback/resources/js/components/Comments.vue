@@ -1,7 +1,7 @@
 <template>
   <div class="comments overflow-auto">
     <div class="my-2">
-      Comments
+      {{ titleText }}
     </div>
 
     <b-media
@@ -11,24 +11,15 @@
     >
       <template v-slot:aside>
         <b-img
-          blank
-          blank-color="#C5C5C5"
-          width="60px"
-          style="border-radius:5px;"
-        />
-        <!--
-          Расскоментить, когда будет гарантированно возвращаться base64
-          и удалить <b-img> выше
-        <b-img
           :src="comment.user.icon"
           width="60px"
           style="border-radius:5px;"
-        /> -->
+        />
       </template>
 
       <b-row align-h="start">
         <b-col cols="auto">
-          {{ [comment.user.first_name, comment.user.last_name].join(" ") }}
+          {{ comment.user.name }}
         </b-col>
       </b-row>
 
@@ -49,13 +40,13 @@
       variant="outline-secondary"
       @click="onCommentPost"
     >
-      <div v-if="!submitPressed">Submit</div>
+      <div v-if="!submitPressed">{{ submitText }}</div>
       <div v-else>
         <div
           class="spinner-grow spinner-grow-sm"
           role="status"
         />
-        Sending...
+        {{ sendingText }}
       </div>
     </b-button>
   </div>
@@ -64,6 +55,15 @@
 <script>
 export default {
   props: {
+    user: {
+      type: Object,
+      default: () => {
+        return {
+          name: 'Anonymous',
+          locale: 'en'
+        }
+      }
+    },
     video: {
       type: Object,
       default: () => {
@@ -73,58 +73,61 @@ export default {
   },
   data () {
     return {
-      user: {},
       comments: [],
       text: '',
       submitPressed: false
     }
   },
+  computed: {
+    titleText () { return this.user.locale ==='en' ? 'Comments' : 'Комментарии' },
+    submitText () { return this.user.locale ==='en' ? 'Submit' : 'Отправить' },
+    sendingText () { return this.user.locale ==='en' ? 'Sending...' : 'Отправка...' }
+  },
   async mounted () {
-    await axios
-      .get('/me')
-      .then((response) => {
-        user = response
-      })
-      .catch(() => {})
-
     await axios
       .get(`/api/comments/${this.video.id}`)
       .then(response => {
-        // Раскоментить, когда будет работать GET /api/comment/<video_id>/
-        // и удалить блок с хард-кодными комментами в mounted ()
-        // this.comments = response
+        /**
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * У меня не работает подгруз очка видосов
+         * Положи сюда тот респонс, который возвращает апишка комментов
+         * 
+         * 
+         * 
+         */
+        this.comments = response
+        /**
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         */
       })
       .catch(() => {})
-    
-    this.comments = this.comments.concat([
-      {
-        text: 'Hello, Biba',
-        user: {
-          name: 'uvarly',
-          first_name: 'Пипипп',
-          last_name: 'Пепаноб',
-          icon: ''
-        }
-      },
-      {
-        text: 'sam Biba',
-        user: {
-          name: 'dwdraugr',
-          first_name: 'Гоздя',
-          last_name: 'Бибиненков',
-          icon: ''
-        }
-      },
-      {
-        text: 'Э',
-        user: {
-          name: 'uvarly',
-          first_name: 'Пипипп',
-          last_name: 'Пепаноб',
-          icon: ''
-        }
-      }
-    ])
   },
   methods: {
     async onCommentPost () {
@@ -135,8 +138,10 @@ export default {
           text: this.text
         })
         .then(() => {
-          // Раскомментить, когда будет работать путь /me
-          // this.comments.push({ text, user })
+          this.comments.push({
+            text: this.text,
+            user: this.user
+          })
         })
         .catch(() => {})
         .finally(() => { this.submitPressed = false })

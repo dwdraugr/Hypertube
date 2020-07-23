@@ -7,7 +7,7 @@
             v-model="search_query"
             type="text"
             class="form-control"
-            placeholder="Let's search something..."
+            :placeholder="placeholderText"
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
           />
@@ -18,13 +18,13 @@
               type="button"
               id="button-addon2"
             >
-              <div v-if="!searchPressed">Search</div>
+              <div v-if="!searchPressed">{{ searchText }}</div>
               <div
                 v-if="searchPressed"
                 class="spinner-grow spinner-grow-sm"
                 role="status"
               >
-                <span class="sr-only">Loading...</span>
+                <span class="sr-only">{{ loadingText }}</span>
               </div>
             </button>
           </div>
@@ -75,7 +75,10 @@
               hide-header
               hide-footer
             >
-              <video-player :video="video" />
+              <video-player
+                :user="user"
+                :video="video"
+              />
             </b-modal>
           </div>
         </div>
@@ -94,13 +97,26 @@
 export default {
   data: function () {
     return {
+      user: {},
       message: 'Привет биба, вот результат:',
       videos: [],
       search_query: '',
       searchPressed: false
     }
   },
+  computed: {
+    placeholderText () { return this.user.locale === 'en' ? 'Let\'s search something' : 'Давай поищем что-нибудь' },
+    searchText () { return this.user.locale === 'en' ? 'Search' : 'Поиск' },
+    loadingText () { return this.user.locale === 'en' ? 'Sending...' : 'Ищем...' }
+  },
   async mounted () {
+    await axios
+      .get('/me')
+      .then((response) => {
+        this.user = response.data
+      })
+      .catch(() => {})
+
     await axios
       .get('/api/latest')
       .then(response => {
