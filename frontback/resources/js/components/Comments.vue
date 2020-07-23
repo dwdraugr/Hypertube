@@ -87,45 +87,7 @@ export default {
     await axios
       .get(`/api/comments/${this.video.id}`)
       .then(response => {
-        /**
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * У меня не работает подгруз очка видосов
-         * Положи сюда тот респонс, который возвращает апишка комментов
-         * 
-         * 
-         * 
-         */
         this.comments = response
-        /**
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         * 
-         */
       })
       .catch(() => {})
   },
@@ -142,6 +104,7 @@ export default {
             text: this.text,
             user: this.user
           })
+          this.text = ''
         })
         .catch(() => {})
         .finally(() => { this.submitPressed = false })

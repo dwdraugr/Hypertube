@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="video">
     <b-overlay :show="queryInProgress" spinner-type="grow">
       <div
         v-html="template"
@@ -46,20 +46,31 @@ export default {
   },
   async mounted () {
     await axios
-      .get('/download', {
-        params: {
-          torrentLink: this.video.torrents[0].url
-        }
+      .get(`/api/${this.video.id}`)
+      .then(async (response) => {
+        await axios
+          .get('/download', {
+            params: {
+              torrentLink: this.video.torrents[0].url
+            }
+          })
+          .then(response => {
+            this.template = response.data
+          })
+          .catch(() => {
+            this.template = this.errorMessage
+          })
+          .finally(() => {
+            this.queryInProgress = false
+          })
       })
-      .then(response => {
-        this.template = response.data
-      })
-      .catch(() => {
-        this.template = this.errorMessage
-      })
-      .finally(() => {
-        this.queryInProgress = false
-      })
+      .catch(() => {})
   }
 }
 </script>
+
+<style scoped>
+.video {
+  min-height: 256px;
+}
+</style>
