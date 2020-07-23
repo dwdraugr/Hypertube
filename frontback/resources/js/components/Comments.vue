@@ -85,9 +85,9 @@ export default {
   },
   async mounted () {
     await axios
-      .get(`/api/comments/${this.video.id}`)
+      .get(`/api/comment/${this.video.id}`)
       .then(response => {
-        this.comments = response
+        this.comments = response.data
       })
       .catch(() => {})
   },
